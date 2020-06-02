@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de cuenta</title>
+</head>
+
+<body class="contenedor alineacion">
+    <header class="site-header contenedor">
+        <h1>Logo</h1>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Nosotros</a></li>
+                <li>
+                    <a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor principal">
+
+        <div class="formulario">
+
+            <form action="#" class="formulario__contenido">
+
+                <legend>Registro de usuario</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre y Apellido: </label>
+                    <input type="text" name="nombre" class="campo__input" id="nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="nombreUsuario">Nombre de usuario: </label>
+                    <input type="tel" autocomplete="username" name="nombreUsuario" class="campo__input" id="nombreUsuario">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono: </label>
+                    <input type="tel" name="telefono" class="campo__input" id="telefono">
+                </div>
+
+                <div class="campo">
+                    <label for="email1">E-mail: </label>
+                    <input type="email" autocomplete="email" name="email" class="campo__input" id="email1">
+                </div>
+
+                <div class="campo">
+                    <label for="email2">Repita el E-mail: </label>
+                    <input type="email" autocomplete="email" name="email" class="campo__input" id="email2">
+                </div>
+
+                <div class="campo">
+                    <label for="password1">Password: </label>
+                    <input type="password" autocomplete="new-password" name="password" class="campo__input" id="password1">
+                </div>
+
+                <div class="campo">
+                    <label for="password2">Repita el Password: </label>
+                    <input type="password" autocomplete="new-password" name="password" class="campo__input" id="password2">
+                </div>
+
+                <div class="botones">
+                    <input type="submit" value="Borrar" class="btn btn__borrar" id="btn__borrar">
+                    <input type="submit" value="Enviar" class="btn btn__enviar" id="btn__enviar">
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="site-footer contenedor">
+        <p>Copyright &COPY; Junio--2020</p>
+    </footer>
+
+</body>
+
+</html>

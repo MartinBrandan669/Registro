@@ -1,0 +1,215 @@
+    html {
+        box-sizing: border-box;
+        font-size: 65%;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .contenedor {
+        max-width: 90rem;
+        width: 95%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 3.8rem;
+    }
+    
+    h3 {
+        font-size: 3.6rem;
+    }
+    
+    h4 {
+        font-size: 3.4rem;
+    }
+    
+    h5 {
+        font-size: 3.2rem;
+    }
+    
+    h6 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 2rem;
+        margin: 0;
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .alineacion {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .site-header {
+        border-bottom: 1px solid #000000;
+        padding: 0.5rem;
+    }
+    
+    .site-header h1 {
+        text-align: center;
+    }
+    
+    .navegacion ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navegacion ul li {
+        list-style: none;
+    }
+    
+    .navegacion ul li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    
+    @media (min-width: 768px) {
+        .site-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .site-header h1 {
+            text-align: center;
+            flex: 0 0 calc(40% - 1rem);
+        }
+        .navegacion {
+            align-self: flex-end;
+            flex: 0 0 calc(60% - 1rem);
+        }
+        .navegacion ul li a {
+            font-size: 2rem;
+        }
+        .navegacion ul li:hover {
+            transform: scale(1.2);
+        }
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .principal {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .formulario {
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    
+    .formulario__contenido {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .formulario__contenido legend {
+        font-size: 2rem;
+        border-bottom: 2px solid #85ff85;
+    }
+    
+    .campo {
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .campo label {
+        font-size: 1.5rem;
+        flex: 1;
+        padding-right: 1rem;
+    }
+    
+    .campo input:not([type="submit"]) {
+        font-size: 1.5rem;
+        border: 3px solid #aabff6;
+        border-radius: 10px;
+        background-color: #aabff6;
+        padding: 0.5rem;
+    }
+    
+    .campo input:focus {
+        outline: none;
+        background-color: #acc1f680;
+    }
+    
+    .botones {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .btn {
+        font-size: 2rem;
+        border-radius: 10px;
+        padding: 0.5rem;
+        cursor: pointer;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 1.5rem;
+        transition: hover 3s ease-in-out;
+    }
+    
+    .btn__borrar {
+        border: 2px solid #7769fd;
+        background-color: #7769fd;
+    }
+    
+    .btn__enviar {
+        border: 2px solid #85ff85;
+        background-color: #85ff85;
+    }
+    
+    @media (min-width: 768px) {
+        .formulario {
+            padding: 2rem;
+        }
+        .formulario__contenido legend {
+            font-size: 3rem;
+        }
+        .campo label {
+            font-size: 2rem;
+        }
+        .campo input:not([type="submit"]) {
+            font-size: 2rem;
+        }
+        .btn {
+            font-size: 2.5rem;
+            display: block;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .btn:hover {
+            background-color: transparent;
+        }
+    }
+    /*>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
+    .site-footer p {
+        border-top: 1px solid #000000;
+        text-align: center;
+        padding: 1rem;
+    }
